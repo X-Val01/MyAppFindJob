@@ -35,7 +35,7 @@ private ListView listView_bord;
 
 // используем адаптер данных
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this, R.layout.custom_list_item, catNames);
+                (this, R.layout.custom_list_item,R.id.textView_descriptionAnnoucement, catNames);
 
         listView_bord.setAdapter(adapter);
 
