@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bordBulletin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bordBulletin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_downmenu"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView_bord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            ></ListView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_downmenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Доска объявлений"
+            app:srcCompat="@android:drawable/ic_menu_agenda" />
+
+        <ImageButton
+            android:id="@+id/imageButtonFavorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Избранные"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/Add"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDialogs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Мои сообщения"
+            app:srcCompat="@android:drawable/sym_action_email" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Профиль"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

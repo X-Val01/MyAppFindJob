@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="TextAddPhoto" type="id"/>
+    <item name="TextSelectCategory" type="id"/>
+    <item name="editText_nameAnnoucement" type="id"/>
+    <item name="image1" type="id"/>
+    <item name="image2" type="id"/>
+    <item name="image3" type="id"/>
+    <item name="image4" type="id"/>
+    <item name="spinner" type="id"/>
+    <item name="editText_description" type="id"/>
+    <item name="imageButtonBack" type="id"/>
+    <item name="layout_Title" type="id"/>
+    <item name="textView_newAnnoucement" type="id"/>
+</resources>

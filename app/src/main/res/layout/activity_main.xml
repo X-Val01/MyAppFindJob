@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainMenu"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/people"
+
+        />
+
+    <TextView
+        android:id="@+id/app_textlogo"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
+        android:layout_centerHorizontal="true"
+        android:text="БЫСТРЫЙ ПОИСК СПЕЦИЛИСТА И ПОДРАБОТКИ"
+        android:textStyle="italic"
+        />
+
+
+    <TextView
+        android:id="@+id/forgetPSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Забыли пароль?" />
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/checkboxLogIn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonLogIn"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-145dp"
+        android:layout_toStartOf="@+id/buttonLogIn"
+        style="@style/Material.Drawable.CheckBox"
+        android:text="Запомнить меня"
+        android:textColor="#530606"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="@drawable/input_desing"
+        />
+
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:background="@drawable/pressedlockbutton"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_textlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#530606"
+        android:text="Войти"
+        />
+
+    <Button
+        android:id="@+id/buttonRegistr"
+        android:background="@drawable/pressedlockbutton"
+        android:textAllCaps="false"
+        android:width="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textColor="#530606"
+        android:text="Регистрация" />
+
+
+
+
+    <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/app_textlogo"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Логин"
+        />
+
+    <EditText
+        android:id="@+id/editTextPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/app_textlogo"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Пароль"
+        />
+
+
+</RelativeLayout>

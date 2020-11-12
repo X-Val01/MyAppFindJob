@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutRegistr"
+    tools:context=".RegistryActivity">
+
+    <ImageView
+    android:id="@+id/app_logo"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/people"
+    />
+
+
+    <TextView
+        android:id="@+id/app_textlogo1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
+        android:layout_centerHorizontal="true"
+        android:text="БЫСТРЫЙ ПОИСК СПЕЦИЛИСТА И ПОДРАБОТКИ"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/textRigistryEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_textlogo1"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Введите  E-mail " />
+    <TextView
+        android:id="@+id/textRegistryPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextInputEmail"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Введите  пароль " />
+    <TextView
+        android:id="@+id/textRegistryPsw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextInputPsw"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Введите повторно пароль " />
+
+    <EditText
+        android:id="@+id/editTextInputEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textRigistryEmail"
+        android:hint="E-mail"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextInputPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textRegistryPsw"
+        android:hint="Password"
+        />
+    <EditText
+        android:id="@+id/editTextInputPsw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textRegistryPsw2"
+        android:hint="Password"
+
+        />
+    <Button
+        android:id="@+id/buttonZareg"
+        android:background="@drawable/pressedlockbutton"
+        android:textAllCaps="false"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextInputPsw2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#530606"
+        android:text="Зарегистрироваться"
+        />
+
+
+
+</RelativeLayout>

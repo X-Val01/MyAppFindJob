@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createannoucement.ActivityCreateAnnoucement"
+    android:id="@+id/relativeLayout_createAnnoucement">
+
+
+    <ImageButton
+        android:id="@+id/imageButton_AddImages"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/layout_Title"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/textView_AddPhoto"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_Title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/imageButton_Back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/abc_vector_test"/>
+
+        <TextView
+            android:id="@+id/textView_newAnnoucement"
+            android:layout_width="369dp"
+            android:layout_height="match_parent"
+            android:text="   Новое объявление"
+            android:textSize="25sp"
+            android:textStyle="italic|bold"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonAddAnnoucement"
+        android:background="@drawable/pressedlockbutton"
+        android:textAllCaps="false"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#530606"
+        android:text="Добавить объявление"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/textView_AddPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_Title"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Добавьте фотографии:"
+        android:textColor="#530606"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView_SelectCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_nameAnnoucement"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Выберите категорию"
+        android:textStyle="bold|italic"
+        android:textColor="#530606"/>
+    <TextView
+        android:id="@+id/TextDiscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_SelectCategory"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Описание:"
+        android:textStyle="bold|italic"
+        android:textColor="#530606"/>
+
+    <EditText
+        android:id="@+id/editText_nameAnnoucement"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/layout_AddPhoto"
+        android:hint="Название работы"
+        android:maxLength="50"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+       />
+
+    <EditText
+        android:id="@+id/editText_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextDiscription"
+        android:hint="Введите описание"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:maxLength="400"/>
+
+<LinearLayout
+    android:id="@+id/layout_AddPhoto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:layout_below="@+id/textView_AddPhoto"
+    >
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/TextAddPhoto"
+        android:layout_marginStart="15dp"
+        android:background="#D3CECE"
+         />
+
+</LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/editText_nameAnnoucement"
+        android:background="@drawable/input_desing"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/textView_SelectCategory"
+        android:autofillHints="Выберите категорию"
+        android:spinnerMode="dropdown" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="KhvalAlexandr.myjob">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/people"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/people"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".createannoucement.ActivityCreateAnnoucement"></activity>
+        <activity android:name=".bordBulletin" />
+        <activity android:name=".RegistryActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
