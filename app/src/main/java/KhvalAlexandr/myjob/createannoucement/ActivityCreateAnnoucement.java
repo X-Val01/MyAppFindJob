@@ -33,7 +33,6 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 import KhvalAlexandr.myjob.R;
-import KhvalAlexandr.myjob.UsersInfo.NewAnnoucement;
 import KhvalAlexandr.myjob.bordBulletin;
 import io.paperdb.Paper;
 

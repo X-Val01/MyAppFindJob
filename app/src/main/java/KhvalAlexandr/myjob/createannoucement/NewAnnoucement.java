@@ -1,4 +1,4 @@
-package KhvalAlexandr.myjob.UsersInfo;
+package KhvalAlexandr.myjob.createannoucement;
 
 public class NewAnnoucement{
     private String nameAnnoucement,descriptionAnnoucement,categoryAnnoucement;
